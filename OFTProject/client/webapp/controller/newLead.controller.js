@@ -507,6 +507,7 @@ sap.ui.define([
 				}
 			});
 			$.get("/todayInquiry").then(function(data) {
+
 				that.getView().getModel("local").setProperty("/AllInq", data);
 			});
 			setTimeout(function() {
